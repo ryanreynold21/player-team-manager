@@ -117,7 +117,7 @@ const TeamModal = ({ isOpen, onClose, team }: TeamModalProps) => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 text-black py-2 border rounded-lg focus:outline-none focus:ring-2 ${
                   errors.name
                     ? "border-red-500 ring-red-300"
                     : "border-gray-300 focus:ring-blue-500"
@@ -142,7 +142,7 @@ const TeamModal = ({ isOpen, onClose, team }: TeamModalProps) => {
                 name="region"
                 value={formData.region}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 text-black py-2 border rounded-lg focus:outline-none focus:ring-2 ${
                   errors.region
                     ? "border-red-500 ring-red-300"
                     : "border-gray-300 focus:ring-blue-500"
@@ -167,7 +167,7 @@ const TeamModal = ({ isOpen, onClose, team }: TeamModalProps) => {
                 name="country"
                 value={formData.country}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full px-4 py-2 text-black border rounded-lg focus:outline-none focus:ring-2 ${
                   errors.country
                     ? "border-red-500 ring-red-300"
                     : "border-gray-300 focus:ring-blue-500"
@@ -183,7 +183,7 @@ const TeamModal = ({ isOpen, onClose, team }: TeamModalProps) => {
               <button
                 type="button"
                 onClick={onClose}
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 font-semibold hover:bg-gray-100 transition-colors"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-red-400 font-semibold hover:bg-gray-100 transition-colors"
               >
                 Cancel
               </button>

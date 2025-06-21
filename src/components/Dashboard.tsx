@@ -33,9 +33,9 @@ const Dashboard = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-theme">
+              <h5 className="text-[18px] lg:text-xl font-bold text-theme">
                 Player Team Manager
-              </h1>
+              </h5>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-theme-muted">
@@ -86,13 +86,13 @@ const Dashboard = () => {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Tabs */}
-        <div className="border-b border-theme-lighter mb-8">
+        <div className="border-b border-theme-lighter py-2 mb-8">
           <nav className="-mb-px flex space-x-8">
             <button
               onClick={() => setActiveTab("teams")}
               className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === "teams"
-                  ? "border-blue-500 text-blue-400"
+                  ? "border-theme text-theme"
                   : "border-transparent text-theme-muted hover:text-theme hover:border-theme-lighter"
               }`}
             >
@@ -102,7 +102,7 @@ const Dashboard = () => {
               onClick={() => setActiveTab("players")}
               className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === "players"
-                  ? "border-blue-500 text-blue-400"
+                  ? "border-theme text-theme"
                   : "border-transparent text-theme-muted hover:text-theme hover:border-theme-lighter"
               }`}
             >
