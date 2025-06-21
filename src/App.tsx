@@ -1,17 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const { isLoggedIn } = useSelector((state: any) => state.auth);
-
   return (
-    <>
-      <div className=" bg-black w-screen h-screen text-white">Init</div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
