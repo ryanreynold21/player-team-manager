@@ -1,7 +1,7 @@
 import type { Player } from "../slice/teamsSlice";
 
-// IMPORTANT: You need to get your own API key from https://balldontlie.io/
-const API_KEY = "ce6085ad-917b-4577-a93d-505d93855439";
+// Use environment variable for API key (more secure for deployment)
+const API_KEY = import.meta.env.VITE_BALLDONTLIE_API_KEY || "YOUR_API_KEY_HERE";
 const API_BASE_URL = "https://api.balldontlie.io/v1";
 
 export interface PlayersResponse {
