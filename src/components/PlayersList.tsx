@@ -5,7 +5,6 @@ import {
   setError,
   setPlayers,
   addPlayers,
-  resetPlayers,
 } from "../slice/playersSlice";
 import { addPlayerToTeam, removePlayerFromTeam } from "../slice/teamsSlice";
 import { fetchPlayers } from "../services/api";
